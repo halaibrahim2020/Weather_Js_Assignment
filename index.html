@@ -1,0 +1,248 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/all.min.css"> 
+        <link rel="stylesheet" href="css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="css/main.css"> 
+        
+    </head>
+    <body>
+        
+       <div class="site-content">
+        <div class="site-header">
+            <div class="container d-flex  flex-wrap">
+                <a class="branding" href="#">
+                    <img class="logo" src="Images/logo.png">
+                </a>
+                <div class="logo-type">
+                    <h1 class="site-title">Weather</h1>
+                    <span class="site-description ">tagline goes here</span>
+                </div>
+                <div class="main-navigation m-auto">
+                    <!-- <button class="menu-toggle" type="button">
+                        <i class="fa fa-bars"></i>
+                    </button> -->
+                    <ul class="menu ">
+                        <li class="menu-item mx-1 current-menu-item "><a  href="/">Home</a></li>
+                        <li class="menu-item mx-1"><a href="#">News</a></li>
+                        <li class="menu-item mx-1 "><a href="#">Live Cameras</a></li>
+                        <li class="menu-item mx-1 "><a href="#">Photos</a></li>
+                        <li class="menu-item mx-1 "><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+
+       </div>
+
+
+    <!-- ========= hero ============= -->
+    <!-- <div class="hero" data-bg-image="Images/banner.png" style="background-image: url(Images/banner.png);"> -->
+        <!-- <div class="demo">
+            demo
+        </div> -->
+        <div class="hero"  >
+        <div class="container ">
+            <form class="find-location">
+                <input id="search" type="text" placeholder="Find Your Location...">
+                <input id="submit" type="submit" value="Find">
+            </form>
+        </div>
+    </div>
+
+    <!-- ========== End Hero ======== -->
+
+    <!-- ======== Forecast table ========== -->
+    <div class="forecast-table">
+        <div class="container">
+            <div id="forecast" class="forecast-container">
+                <div class="row" id="rowforecast">
+                    <!-- <div class="col-md-4 ">
+                        <div id="today"  class="forecast-header  d-flex justify-content-between align-items-center p-2 rounded-2" >
+                            <div class="day">Saturday</div>
+                            <div class="date">5 October</div>    
+                        </div>
+                        <div id="current" class="forecast-content">
+                            <div class="location p-2 my-3">
+                                Cairo
+                            </div>
+                            <div class="degree   d-flex justify-content-center align-items-center ">
+                                <div class="num">
+                                    27.1
+                                </div>
+                                <sup>o</sup>
+                                C
+                            </div>
+
+                            <div class="forecast-icon d-flex justify-content-center">
+                                <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" class="text-center w-50" >
+                            </div>
+                            <div class="weather-status text-info my-4">
+                                <h6>Clear</h6>
+                            </div>
+                            <div class="weather-custom d-flex justify-content-between">
+                                <span>
+                                    <img src="Images/icon-umberella.png" alt="">
+                                    20%
+                                </span>
+
+                                <span>
+                                    <img src="Images/icon-wind.png" alt="">                          
+                                    18km/h
+                                </span>
+
+                                <span>
+                                    <img src="Images/icon-compass.png" alt="">                          
+                                    East
+                                </span>
+                            </div>
+
+                        </div>
+                        
+
+                    </div>
+
+                    <div class="col-md-4 ">
+                        <div id="today"  class="forecast-header  d-flex justify-content-center align-items-center p-2 rounded-2" >
+                            <div class="day">Sunday</div>
+                        </div>
+                        <div id="current" class="forecast-content d-flex justify-content-center align-items-center flex-column ">
+
+                            <div class="forecast-icon d-flex justify-content-center">
+                                <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" class="text-center" >
+                            </div>
+                            <div class="degree   d-flex justify-content-center align-items-center ">
+                                <div class="num">
+                                    32.4
+                                    <sup>o</sup>
+                                    C
+                                </div>
+                               
+                            </div>
+                            <div class="d-flex ">
+                                <small class="fs-4 my-3">20.6</small>
+                                <sub>o</sub>
+                            </div>
+                           
+                            <div class="weather-status text-info my-4">
+                                <h6>Sunny</h6>
+                            </div>
+                           
+
+                        </div>
+                        
+
+                    </div>
+
+                    <div class="col-md-4 ">
+                        <div id="today"  class="forecast-header  d-flex justify-content-center align-items-center p-2 rounded-2" >
+                            <div class="day">Monday</div>
+                        </div>
+                        <div id="current" class="forecast-content d-flex justify-content-center align-items-center flex-column ">
+
+                            <div class="forecast-icon d-flex justify-content-center">
+                                <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" class="text-center" >
+                            </div>
+                            <div class="degree   d-flex justify-content-center align-items-center ">
+                                <div class="num">
+                                    33.6
+                                    <sup>o</sup>
+                                    C
+                                </div>
+                               
+                            </div>
+                            <div class="d-flex ">
+                                <small class="fs-4 my-3">20.9</small>
+                                <sub>o</sub>
+                            </div>
+                           
+                            <div class="weather-status text-info my-4">
+                                <h6>Sunny</h6>
+                            </div>
+                           
+
+                        </div>
+                        
+
+                    </div> -->
+                </div>
+             </div>
+        </div>
+    </div>
+                <!-- <div class="today forecast">
+                    <div id="today" class="forecast-header">
+                        <div class="day">Saturday</div>
+                        <div class="date">5October</div>
+
+                        </div>
+                    </div>
+                </div> -->
+
+
+    <!-- ===== End Forecast Table ========= -->
+
+    <!-- ========== modal ============ -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-danger"> 
+            <h1 class="modal-title fs-6 text-white " id="exampleModalLabel">Error</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <label class="form-control " id="error_msg">Error , My be you entered wrong city</label>
+                  <!-- <div class="mb-3">
+                    <label class="form-control" id="error_msg">error</label>
+                  </div> -->
+
+
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- ======== End MOdal ============ -->
+
+        <!-- ======== footer ============= -- -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <form class="subscribe-form">
+                    <input class="form-control"  type="text" placeholder="Enter your email to subscribe........">
+                    <input  type="submit" id="inputbtn" value="Subscribe">
+
+
+                </form>
+            </div>
+            <div class="col-md-3 col-md-offset-1">
+                <div class="social-links d-flex justify-content-center align-items-center">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></fa>
+                    <a href="#"><i class="fa-brands fa-google"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+
+            <p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </div>
+</footer>
+    <!-- ========== end footer ======== -->
+
+
+
+       <script src="js/all.min.js"></script>
+       <script src="js/bootstrap.bundle.min.js"></script>
+       <script src="js/index.js"></script>
+    </body>
+</html>
